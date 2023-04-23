@@ -3,22 +3,19 @@
 public class Main {
     public static void main(String[] args) {
 
-        int starting_score = 500; // Начальный счёт
-        int y = starting_score;
-        int replenishment_amount = 2500; // Сумма пополнения
-        int x = replenishment_amount;
-
+        int startScore = 500; // Начальный счёт
+        int amount = 2500; // Сумма пополнения
         int bonus; // Начисляемый бонус
-        if (x > 1000) {
-            bonus = x / 100;
+        if (amount > 1000) {
+            bonus = amount / 100;
         } else {
             bonus = 0;
         }
 
-        int Total_score = y + x + bonus;
+        int TotalScore = startScore + amount + bonus;
 
         System.out.println("Бонус = " + bonus);
-        System.out.println("Итоговый счёт = " + Total_score);
+        System.out.println("Итоговый счёт = " + TotalScore);
 
     }
 }
